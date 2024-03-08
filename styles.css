@@ -1,0 +1,39 @@
+.picture {
+    /*
+    Lay the picture containers out one after the other. (To see why
+    this line is important, try changing it to 'block' or 'inline'.)
+    */
+    display: inline-block;
+
+    /* add a little space between each picture and the next */
+    margin: 10px;
+}
+
+.captions {
+    display: flex;
+    justify-content: space-around;
+}
+
+.gallery img {
+    /*
+    The original images are all different sizes but we need
+    them to be consistent for the gallery layout to look good.
+    */
+    height: 200px;
+
+    /* add an outline around each picture */
+    border: 3px double black;
+}
+
+.gallery p {
+    text-align: center;
+    margin-top: 0;
+}
+
+body {
+    text-align:center;
+    background:url(https://template.canva.com/EAD2962NKnQ/2/0/1600w-_Tcjok-d9b4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black;
+}
